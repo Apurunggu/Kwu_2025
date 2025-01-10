@@ -45,10 +45,10 @@
 }
 
 .dark-background {
-  --background-color: #08005e;
+  --background-color: #822b00;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #0c0091;
+  --surface-color: #822b00;
   --contrast-color: #ffffff;
 }
 
@@ -176,7 +176,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #10058c;
+  --background-color: #822b00;
 }
 
 /*--------------------------------------------------------------
@@ -1224,10 +1224,17 @@ section,
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; 
 }
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+.logo {
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
