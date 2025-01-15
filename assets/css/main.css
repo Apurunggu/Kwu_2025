@@ -1278,10 +1278,12 @@ section,
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
+  width: 150px; /* Adjusted width */
+  height: 150px; /* Added height to ensure the image is square */
   border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 6px solid rgba(0, 0, 0, 0.15); /* Adjusted border color */
   margin: 0 auto;
+  object-fit: cover; /* Ensure the image covers the area */
 }
 
 .testimonials .testimonial-item h3 {
@@ -1442,6 +1444,12 @@ section,
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
+}
+
+.pricing-item img {
+  width: 100%; /* Make the image take the full width of its container */
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the image covers the area */
 }
 
 .pricing h4 {
